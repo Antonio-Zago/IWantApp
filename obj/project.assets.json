@@ -2025,19 +2025,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Antonio Zago\\.nuget\\packages\\": {}
+    "C:\\Users\\anton\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Meus Projetos\\IWantApp\\IWantApp.csproj",
+      "projectUniqueName": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\IWantApp\\IWantApp.csproj",
       "projectName": "IWantApp",
-      "projectPath": "D:\\Meus Projetos\\IWantApp\\IWantApp.csproj",
-      "packagesPath": "C:\\Users\\Antonio Zago\\.nuget\\packages\\",
-      "outputPath": "D:\\Meus Projetos\\IWantApp\\obj\\",
+      "projectPath": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\IWantApp\\IWantApp.csproj",
+      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\IWantApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Antonio Zago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
