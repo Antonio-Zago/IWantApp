@@ -14,20 +14,17 @@ namespace IWantApp.Endpoints.Categories
 
 
         public static IResult Action(CategoryRequest categoryRequest, ApplicationDbContext applicationDbContext) 
-        {   
+        {
 
 
-            var category = new Category(categoryRequest.Name)
-            {
-                CreatedBy = "teste",
-                CreatedOn = DateTime.Now,
-                EditedBy = "teste",
-                EditedOn = DateTime.Now
-            };
+            var category = new Category(categoryRequest.Name, "Teste", "Teste");
 
             if (!category.IsValid) //IsValid só veio pois a entidade esta herdando de notification
             {
-                return Results.BadRequest(category.Notifications);
+                //return Results.BadRequest(category.Notifications);
+                
+
+                return Results.ValidationProblem(category.Notifications.ConvertToProblemDetails());//Padrão
             }
 
             applicationDbContext.Categoryes.Add(category);
