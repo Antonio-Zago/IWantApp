@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -697,6 +706,19 @@
     }
   },
   "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2018,6 +2040,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Flunt >= 2.0.5",
       "Microsoft.EntityFrameworkCore >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
@@ -2025,19 +2048,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anton\\.nuget\\packages\\": {}
+    "C:\\Users\\Antonio Zago\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\IWantApp\\IWantApp.csproj",
+      "projectUniqueName": "D:\\Meus Projetos\\IWantApp\\IWantApp.csproj",
       "projectName": "IWantApp",
-      "projectPath": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\IWantApp\\IWantApp.csproj",
-      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anton\\OneDrive\\Documentos\\GitHub\\IWantApp\\obj\\",
+      "projectPath": "D:\\Meus Projetos\\IWantApp\\IWantApp.csproj",
+      "packagesPath": "C:\\Users\\Antonio Zago\\.nuget\\packages\\",
+      "outputPath": "D:\\Meus Projetos\\IWantApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Antonio Zago\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2063,6 +2086,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Flunt": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.7, )"

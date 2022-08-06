@@ -1,4 +1,5 @@
-﻿using IWantApp.Domain.Products;
+﻿using Flunt.Notifications;
+using IWantApp.Domain.Products;
 using Microsoft.EntityFrameworkCore;
 
 namespace IWantApp.Infra.Data
@@ -14,6 +15,8 @@ namespace IWantApp.Infra.Data
         //Fluent API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.Ignore<Notification>();
             modelBuilder.Entity<Product>()
                 .Property(p => p.Description).HasMaxLength(500);
             modelBuilder.Entity<Product>()

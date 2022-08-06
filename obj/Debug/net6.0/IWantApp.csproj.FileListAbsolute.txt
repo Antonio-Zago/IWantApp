@@ -120,3 +120,4 @@ C:\Users\anton\OneDrive\Documentos\GitHub\IWantApp\obj\Debug\net6.0\refint\IWant
 C:\Users\anton\OneDrive\Documentos\GitHub\IWantApp\obj\Debug\net6.0\IWantApp.pdb
 C:\Users\anton\OneDrive\Documentos\GitHub\IWantApp\obj\Debug\net6.0\IWantApp.genruntimeconfig.cache
 C:\Users\anton\OneDrive\Documentos\GitHub\IWantApp\obj\Debug\net6.0\ref\IWantApp.dll
+D:\Meus Projetos\IWantApp\bin\Debug\net6.0\Flunt.dll
