@@ -9,7 +9,9 @@ builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["Conne
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>(); 
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddScoped<QueryAllUsersWithClaimName>();
 
 var app = builder.Build();
 
@@ -26,6 +28,9 @@ app.MapMethods(CategoryPost.Template, CategoryPost.Methods, CategoryPost.handle)
 app.MapMethods(CategoryGetAll.Template, CategoryGetAll.Methods, CategoryGetAll.handle);
 app.MapMethods(CategoryUpdate.Template, CategoryUpdate.Methods, CategoryUpdate.handle);
 app.MapMethods(EmployeePost.Template, EmployeePost.Methods, EmployeePost.handle);
+app.MapMethods(EmployeeGetAll.Template, EmployeeGetAll.Methods, EmployeeGetAll.handle);
+
+
 
 
 app.Run();
